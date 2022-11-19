@@ -1,7 +1,7 @@
 const MainMenu = () => {
   return (
     <>
-      <p>my menu</p>
+      <div>my menu</div>
     </>
   );
 };

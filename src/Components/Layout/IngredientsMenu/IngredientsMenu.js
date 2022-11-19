@@ -1,7 +1,7 @@
 const IngredientsMenu = () => {
   return (
     <>
-      <p>ingredients</p>
+      <div>ingredients</div>
     </>
   );
 };

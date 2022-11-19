@@ -1,0 +1,23 @@
+.profileContainer {
+  width: 100%;
+  // border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.imgContainer {
+  width: 100%;
+  //   border: 2px solid red;
+  object-fit: contain;
+  display: flex;
+}
+
+.imgContainer img {
+  width: 180px;
+  border-radius: 100px;
+  border: 4px rgb(255, 191, 54);
+  border-style: dashed solid;
+  padding: 8px;
+  margin: 0 auto;
+}

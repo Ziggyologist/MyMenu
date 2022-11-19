@@ -1,16 +1,22 @@
 import React from "react";
+import {useState} from "react";
 import MenuNav from "./Components/Layout/NavMenu/MenuNav";
 import MainMenu from "./Components/Layout/MainMenu/MainMenu";
 import IngredientsMenu from "./Components/Layout/IngredientsMenu/IngredientsMenu";
 import MainContainer from "./Components/UI/MainContainer";
+import "./App.scss";
+import {foods, allUsers} from "./Components/Store/database";
 
 function App() {
+  const [users, setUsers] = useState([]);
   return (
-    <MainContainer>
-      <MenuNav></MenuNav>
-      <MainMenu></MainMenu>
-      <IngredientsMenu></IngredientsMenu>
-    </MainContainer>
+    <div className="mainAppBackground">
+      <MainContainer>
+        <MenuNav userName={allUsers[0].user_name} />
+        <MainMenu />
+        <IngredientsMenu />
+      </MainContainer>
+    </div>
   );
 }
 

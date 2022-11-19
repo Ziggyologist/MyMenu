@@ -1,6 +1,6 @@
 import styles from "./MainContainer.module.scss";
 
 const MainContainer = props => {
-  return <div>{props.children}</div>;
+  return <div className={styles.mainContainer}>{props.children}</div>;
 };
 export default MainContainer;
