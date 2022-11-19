@@ -1,5 +1,6 @@
 import styles from "./MenuNav.module.scss";
 import UserProfile from "./UserProfile";
+import {useState} from "react";
 import {
   Speedometer2,
   EggFried,
@@ -8,6 +9,7 @@ import {
 } from "react-bootstrap-icons";
 
 const MenuNav = props => {
+  const handleOnClick = () => {};
   return (
     <div className={styles.main_container}>
       <UserProfile userName={props.userName} />
@@ -19,10 +21,11 @@ const MenuNav = props => {
         </li>
         <li>
           <EggFried className={styles.icons} />
-          <a href="#">Meals</a>
+          <a href="#" onClick={handleOnClick}>
+            Meals
+          </a>
         </li>
         <li>
-          {" "}
           <ClockHistory className={styles.icons} />
           <a href="#">Meal History</a>
         </li>
