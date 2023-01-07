@@ -1,5 +1,12 @@
-.container {
+.mainContainer {
   background-color: rgba(128, 128, 128, 0.062);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.container {
   border-radius: 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -8,8 +15,25 @@
   padding: 0 1rem;
 }
 
+.sideBtn {
+  max-width: 20%;
+  min-width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 1rem 1rem 0;
+  background-color: rgba(128, 128, 128, 0.068);
+  font-weight: 500;
+}
+.sideBtn:hover {
+  background-color: rgba(128, 128, 128, 0.151);
+  cursor: pointer;
+  font-weight: 900;
+  color: rgb(170, 54, 0);
+}
+
 h3:hover {
-  color: rgba(170, 111, 0, 0.801);
+  color: rgb(170, 111, 0);
   cursor: default;
   //   text-decoration: underline;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
