@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+}
+
+.foodArea {
+  // border: 2px solid green;
+  overflow-y: auto;
+  padding: 0.5rem 2rem;
+}

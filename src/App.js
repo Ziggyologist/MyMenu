@@ -8,12 +8,12 @@ import "./App.scss";
 import {foods, allUsers} from "./Components/Store/database";
 
 function App() {
-  const [users, setUsers] = useState([]);
+  const selectedFoods = foods;
   return (
     <div className="mainAppBackground">
       <MainContainer>
         <MenuNav userName={allUsers[0].user_name} />
-        <MainMenu />
+        <MainMenu selectedFoods={selectedFoods} />
         <IngredientsMenu />
       </MainContainer>
     </div>

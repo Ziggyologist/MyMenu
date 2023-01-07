@@ -11,6 +11,7 @@ export const foods = [
     ],
     instructions:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius error quo perspiciatis repudiandae nostrum facere nam. Dolor cum illo itaque reprehenderit odit, nemo quo in commodi dolores. Possimus, eos minus.",
+    category: "chicken",
   },
   {
     name: "Chinese chicken",
@@ -23,12 +24,14 @@ export const foods = [
     ],
     instructions:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius error quo perspiciatis repudiandae nostrum facere nam. Dolor cum illo itaque reprehenderit odit, nemo quo in commodi dolores. Possimus, eos minus.",
+    category: "noodle",
   },
   {
     name: "pesto pasta",
     ingredients: ["pesto", "pasta"],
     instructions:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius error quo perspiciatis repudiandae nostrum facere nam. Dolor cum illo itaque reprehenderit odit, nemo quo in commodi dolores. Possimus, eos minus.",
+    category: "pasta",
   },
 ];
 export const allUsers = [

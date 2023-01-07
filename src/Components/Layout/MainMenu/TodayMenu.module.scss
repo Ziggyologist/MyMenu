@@ -1,0 +1,28 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  //   border: 2px solid red;
+  gap: 2.5rem;
+  padding: 1rem 0;
+  padding-bottom: 2rem;
+}
+
+.headingArea {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.headingArea button {
+  padding: 0 1rem;
+  height: 25px;
+}
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.options div {
+  //   border: 2px solid orange;
+  text-align: center;
+}
