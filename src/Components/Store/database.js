@@ -7,14 +7,15 @@ export const foods = [
       "wrap",
       "chicken breast",
       "chilli sauce",
-      "tomatoe",
+      "tomato",
     ],
     instructions:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius error quo perspiciatis repudiandae nostrum facere nam. Dolor cum illo itaque reprehenderit odit, nemo quo in commodi dolores. Possimus, eos minus.",
+    long_instructions: "",
     category: "chicken",
   },
   {
-    name: "Chinese chicken",
+    name: "chinese chicken",
     ingredients: [
       "red pepper",
       "pepper",
@@ -32,6 +33,51 @@ export const foods = [
     instructions:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius error quo perspiciatis repudiandae nostrum facere nam. Dolor cum illo itaque reprehenderit odit, nemo quo in commodi dolores. Possimus, eos minus.",
     category: "pasta",
+  },
+  {
+    name: "potato salad",
+    ingredients: [
+      "mexican mix",
+      "pepper",
+      "wrap",
+      "chicken breast",
+      "chilli sauce",
+      "tomato",
+    ],
+    instructions:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius error quo perspiciatis repudiandae nostrum facere nam. Dolor cum illo itaque reprehenderit odit, nemo quo in commodi dolores. Possimus, eos minus.",
+    long_instructions: "",
+    category: "chicken",
+  },
+  {
+    name: "baked potatoes",
+    ingredients: [
+      "mexican mix",
+      "pepper",
+      "wrap",
+      "chicken breast",
+      "chilli sauce",
+      "tomato",
+    ],
+    instructions:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius error quo perspiciatis repudiandae nostrum facere nam. Dolor cum illo itaque reprehenderit odit, nemo quo in commodi dolores. Possimus, eos minus.",
+    long_instructions: "",
+    category: "chicken",
+  },
+  {
+    name: "chicken stew",
+    ingredients: [
+      "mexican mix",
+      "pepper",
+      "wrap",
+      "chicken breast",
+      "chilli sauce",
+      "tomato",
+    ],
+    instructions:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius error quo perspiciatis repudiandae nostrum facere nam. Dolor cum illo itaque reprehenderit odit, nemo quo in commodi dolores. Possimus, eos minus.",
+    long_instructions: "",
+    category: "chicken",
   },
 ];
 export const allUsers = [
