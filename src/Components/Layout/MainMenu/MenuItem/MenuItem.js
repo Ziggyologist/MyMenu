@@ -3,7 +3,14 @@ import {useState} from "react";
 
 const MenuItem = function (props) {
   const [selected, setSelected] = useState(false);
-  const {name, ingredients, instructions, key} = props.dish;
+  const {name, ingredients, instructions, long_instructions, src, key} =
+    props.dish;
+  const allIngredients = ingredients.flatMap(
+    // FOR INGREDIENTS SIDE
+    ingredient => ingredient.qty + " " + ingredient.ingredient
+    // ingredient => ingredient.ingredient
+  );
+  console.log(typeof long_instructions);
   const handleSelect = e => {
     if (selected === false) {
       console.log("select");
@@ -25,16 +32,40 @@ const MenuItem = function (props) {
   };
   return (
     <main key={key} className={styles.mainContainer} value={name}>
-      <div className={styles.container}>
-        <h3>{name}</h3>
-        <p>{instructions}</p>
-        <div>
-          <p>
-            <span className={styles.subtitle}>Ingredients: </span>
-            {ingredients.join(", ")}
-          </p>
-        </div>
-      </div>
+      <details>
+        <summary>
+          <div className={styles.container}>
+            <h3>
+              <a
+                href={src}
+                target="_blank"
+                rel="noreferrer"
+                title="Walder Wellness"
+              >
+                {name}
+              </a>
+            </h3>
+            <p>{instructions}</p>
+            <div>
+              <p>
+                <span className={styles.subtitle}>Ingredients: </span>
+                {allIngredients.join(", ")}
+              </p>
+            </div>
+          </div>
+        </summary>
+
+        <ul>
+          <h3>Instructions:</h3>
+          {long_instructions.map(ingredient => (
+            <li>{ingredient}</li>
+          ))}
+        </ul>
+        <p className={styles.link}>
+          Link to recipe:
+          <a href={src}> {src}</a>
+        </p>
+      </details>
       <button
         className={styles.sideBtn}
         title="add item"
