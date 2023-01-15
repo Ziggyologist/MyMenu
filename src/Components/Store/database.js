@@ -88,7 +88,7 @@ export const foods = [
       {qty: "", ingredient: "salt, pepper, chilli flakes"},
     ],
     instructions:
-      "A delicious, spicy blend packed full of iron and low in fat to boot. It's ready in under half an hour, or can be made in a slow cooker.",
+      "A delicious, spicy blend packed full of iron and low in fat to boot.",
     long_instructions: [],
   },
   {
@@ -123,7 +123,7 @@ export const foods = [
       {qty: "", ingredient: "salt, pepper, olive oil, basil"},
     ],
     instructions:
-      "Make this quick and healthy frittata with a bean salad in 30 minutes flat. Flavoured with broccoli and ricotta, you'll also have leftovers you can enjoy the next day.",
+      "Make this quick and healthy frittata with a bean salad in 30 minutes flat. Flavoured with broccoli and ricotta.",
     long_instructions: [],
   },
   {
@@ -140,7 +140,7 @@ export const foods = [
       {qty: "", ingredient: "salt, pepper, olive oil, parsley"},
     ],
     instructions:
-      "Need something speedy for dinner? Try this chicken, coated in flavourful za'atar and served with spiced chickpeas. It's simple, but seriously delicious",
+      "Need something speedy for dinner? Try this chicken, coated in flavourful za'atar and served with spiced chickpeas.",
     long_instructions: [],
   },
   {
@@ -161,6 +161,15 @@ export const foods = [
     ],
     instructions:
       "Serve this pesto chicken and couscous salad in lettuce leaves for a healthy supper. With added sundried tomatoes and pine nuts, it has lots of texture.",
+    long_instructions: [],
+  },
+  {
+    name: "Pesto chicken salad",
+    category: "chicken",
+    src: "https://www.bbcgoodfood.com/recipes/pesto-chicken-salad",
+    title: "BBC good food",
+    ingredients: [{qty: "50 g", ingredient: "couscous"}],
+    instructions: "Serve this pesto chicken and couscous",
     long_instructions: [],
   },
 ];
