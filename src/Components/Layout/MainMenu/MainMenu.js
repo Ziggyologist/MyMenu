@@ -5,12 +5,12 @@ import {useState} from "react";
 
 const MainMenu = props => {
   const dishes = props.selectedFoods;
-  const dummy_selection = [];
-  const [selectedDishes, setSelectedDishes] = useState(dummy_selection);
-  console.log(selectedDishes);
+  const [selectedDishes, setSelectedDishes] = useState([]);
+
+  // console.log(selectedDishes);
   const selectDishes = function (selected) {
     if (!selectedDishes.includes(selected)) {
-      console.log("double");
+      // console.log("double");
       setSelectedDishes(prevDishes => [selected, ...prevDishes]);
     }
   };
@@ -20,8 +20,10 @@ const MainMenu = props => {
         prevDishes.filter(dish => dish !== selected)
       );
     }
-    console.log(selectedDishes);
+    // console.log(selectedDishes);
   };
+  props.onSelect(selectedDishes);
+
   return (
     <div className={styles.container}>
       <TodayMenu dishes={dishes} />

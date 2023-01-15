@@ -109,7 +109,7 @@ export const foods = [
     long_instructions: [],
   },
   {
-    name: "Ricotta, broccoli, & new potato frittata",
+    name: "Ricotta, broccoli & new potato frittata",
     category: "herbs",
     src: "https://www.bbcgoodfood.com/recipes/ricotta-broccoli-new-potato-frittata",
     title: "BBC good food",

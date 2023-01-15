@@ -6,23 +6,20 @@ const MenuItem = function (props) {
   const {name, ingredients, instructions, long_instructions, src, key} =
     props.dish;
   const allIngredients = ingredients.flatMap(
-    // FOR INGREDIENTS SIDE
     ingredient => ingredient.qty + " " + ingredient.ingredient
-    // ingredient => ingredient.ingredient
   );
-  console.log(typeof long_instructions);
   const handleSelect = e => {
     if (selected === false) {
-      console.log("select");
+      // console.log("select");
       e.target.closest("main").style.border = "orange 1px solid";
       e.target.style.backgroundColor = "orange";
       e.target.innerText = "✓";
       setSelected(true);
-      console.log(e.target.value);
+      // console.log(e.target.value);
       props.onSelect(e.target.value);
     }
     if (selected === true) {
-      console.log("deselect");
+      // console.log("deselect");
       e.target.closest("main").style.border = "none";
       e.target.style.backgroundColor = "inherit";
       e.target.innerText = ">>";
@@ -57,8 +54,8 @@ const MenuItem = function (props) {
 
         <ul>
           <h3>Instructions:</h3>
-          {long_instructions.map(ingredient => (
-            <li>{ingredient}</li>
+          {long_instructions.map((ingredient, idx) => (
+            <li key={idx}>{ingredient}</li>
           ))}
         </ul>
         <p className={styles.link}>
